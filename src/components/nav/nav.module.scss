@@ -1,0 +1,71 @@
+.navbar {
+  transition: all 0.2s ease;
+}
+
+.navMenu {
+  display: none;
+  // background-color: red;
+}
+
+.logo {
+  margin-left: 16px;
+  margin-right: 16px;
+  flex: 1;
+}
+
+.logoExpanded {
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.expandWrapper {
+  &:hover {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+}
+
+.expandIcon {
+  // position: absolute;
+  // top: 30px;
+  // right: 30px;
+  &:hover {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+}
+
+.navMenuBase {
+  background-color: rgba(226,228,217,1.0);
+  color: #2d382e;
+}
+
+.navMenuMobileWrapper {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.261);
+  position: absolute;
+  top: 0;
+  // backdrop-filter: blur(16px);
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+
+.navMenuMobileTop {
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .navMenu {
+    display: inherit;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .navMenuMobileWrapper {
+    display: none;
+  }
+}

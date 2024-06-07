@@ -1,0 +1,9 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "comma-dangle": [1, "always-multiline"],
+    "curly": "off",
+    "semi": [1, "never"],
+    "quotes": "off"
+  }
+}
